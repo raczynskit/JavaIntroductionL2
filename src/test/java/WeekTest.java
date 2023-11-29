@@ -6,58 +6,106 @@ class WeekTest {
 
     @Test
     void shouldGetMonday() {
+
+        //given
         String dayOfWeek = Week.getDayOfWeek(1);
+
+        //when
         String expectedResult = "Monday";
 
-        assertEquals (expectedResult, dayOfWeek);
-    }
-    @Test
-    void shouldGetTuesday() {
-        String dayOfWeek = Week.getDayOfWeek(2);
-        String expectedResult = "Tuesday";
-
-        assertEquals (expectedResult, dayOfWeek);
-    }
-    @Test
-    void shouldGetWednesday() {
-        String dayOfWeek = Week.getDayOfWeek(3);
-        String expectedResult = "Wednesday";
-
-        assertEquals (expectedResult, dayOfWeek);
-    }
-    @Test
-    void shouldGetThursday() {
-        String dayOfWeek = Week.getDayOfWeek(4);
-        String expectedResult = "Thursday";
-
-        assertEquals (expectedResult, dayOfWeek);
-    }
-    @Test
-    void shouldGetFriday() {
-        String dayOfWeek = Week.getDayOfWeek(5);
-        String expectedResult = "Friday";
-
-        assertEquals (expectedResult, dayOfWeek);
-    }
-    @Test
-    void shouldGetWeekend1() {
-        String dayOfWeek = Week.getDayOfWeek(6);
-        String expectedResult = "Weekend";
-
-        assertEquals (expectedResult, dayOfWeek);
-    }
-    @Test
-    void shouldGetWeekend2() {
-        String dayOfWeek = Week.getDayOfWeek(7);
-        String expectedResult = "Weekend";
-
-        assertEquals (expectedResult, dayOfWeek);
-    }
-    @Test
-    void shouldReturnError() {
-        String dayOfWeek = Week.getDayOfWeek(8);
-        String expectedResult = "There is no such day!";
-
+        //then
         assertEquals(expectedResult, dayOfWeek);
     }
+
+    @Test
+    void shouldGetTuesday() {
+
+        //given
+        String dayOfWeek = Week.getDayOfWeek(2);
+
+        //when
+        String expectedResult = "Tuesday";
+
+        //then
+        assertEquals(expectedResult, dayOfWeek);
+    }
+
+    @Test
+    void shouldGetWednesday() {
+
+        //given
+        String dayOfWeek = Week.getDayOfWeek(3);
+
+        //when
+        String expectedResult = "Wednesday";
+
+        //then
+        assertEquals(expectedResult, dayOfWeek);
+    }
+
+    @Test
+    void shouldGetThursday() {
+
+        //given
+        String dayOfWeek = Week.getDayOfWeek(4);
+
+        //when
+        String expectedResult = "Thursday";
+
+        //then
+        assertEquals(expectedResult, dayOfWeek);
+    }
+
+    @Test
+    void shouldGetFriday() {
+
+        //given
+        String dayOfWeek = Week.getDayOfWeek(5);
+
+        //when
+        String expectedResult = "Friday";
+
+        //then
+        assertEquals(expectedResult, dayOfWeek);
+    }
+
+    @Test
+    void shouldGetWeekend1() {
+
+        //given
+        String dayOfWeek = Week.getDayOfWeek(6);
+
+        //when
+        String expectedResult = "Weekend";
+
+        //then
+        assertEquals(expectedResult, dayOfWeek);
+    }
+
+    @Test
+    void shouldGetWeekend2() {
+
+        //given
+        String dayOfWeek = Week.getDayOfWeek(7);
+
+        //when
+        String expectedResult = "Weekend";
+
+        //then
+        assertEquals(expectedResult, dayOfWeek);
+    }
+
+    @Test
+    void shouldReturnError() {
+
+        //given
+        String dayOfWeek = Week.getDayOfWeek(8);
+
+        //when
+        String expectedResult = "There is no such day!";
+
+        //then
+        assertEquals(expectedResult, dayOfWeek);
+    }
+
 }
