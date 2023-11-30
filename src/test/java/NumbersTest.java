@@ -5,55 +5,43 @@ import static org.junit.jupiter.api.Assertions.*;
 class NumbersTest {
 
     @Test
-    void isNumberEvenTrue() {
-
-    //given
-        int i = 1000;
-
-    //when
-        boolean number = Numbers.checkIfNumberIsEven(1000);
-
-    //then
-        assertTrue(number);
-    }
-
-    @Test
-    void isNumberEvenFalse() {
-
-        //given
-        int i = 1001;
+    void shouldBeEven() {
 
         //when
-        boolean number = Numbers.checkIfNumberIsEven(1001);
+        boolean isTrue = Numbers.isEven(1000);
 
         //then
-        assertFalse(number);
+        assertTrue(isTrue);
     }
 
     @Test
-    void isNumberOddTrue() {
-
-    //given
-        int i = 999;
-
-    //when
-        boolean number = Numbers.checkIfNumberIsOdd(999);
-
-    //then
-        assertTrue(number);
-    }
-
-    @Test
-    void isNumberOddFalse() {
-
-        //given
-        int i = 998;
+    void shouldNotBeEven() {
 
         //when
-        boolean number = Numbers.checkIfNumberIsOdd(998);
+        boolean isFalse = Numbers.isEven(1001);
 
         //then
-        assertFalse(number);
+        assertFalse(isFalse);
+    }
+
+    @Test
+    void shouldBeOdd() {
+
+        //when
+        boolean isTrue = Numbers.isOdd(999);
+
+        //then
+        assertTrue(isTrue);
+    }
+
+    @Test
+    void shouldNotBeOdd() {
+
+        //when
+        boolean isFalse = Numbers.isOdd(998);
+
+        //then
+        assertFalse(isFalse);
     }
 }
 

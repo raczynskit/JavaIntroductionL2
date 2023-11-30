@@ -1,12 +1,10 @@
 public class Numbers {
 
-    public static boolean checkIfNumberIsEven(int number) {
-        boolean result = number % 2 == 0;
-        return result;
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
     }
 
-    public static boolean checkIfNumberIsOdd(int number) {
-        boolean result = number % 2 == 1;
-        return result;
+    public static boolean isOdd(int number) {
+        return number % 2 == 1;
     }
 }
