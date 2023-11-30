@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class NumbersTest {
 
     @Test
-    void isNumberEven() {
+    void isNumberEvenTrue() {
 
     //given
         int i = 1000;
@@ -18,7 +18,20 @@ class NumbersTest {
     }
 
     @Test
-    void isNumberOdd() {
+    void isNumberEvenFalse() {
+
+        //given
+        int i = 1001;
+
+        //when
+        boolean number = Numbers.checkIfNumberIsEven(1001);
+
+        //then
+        assertFalse(number);
+    }
+
+    @Test
+    void isNumberOddTrue() {
 
     //given
         int i = 999;
@@ -28,6 +41,19 @@ class NumbersTest {
 
     //then
         assertTrue(number);
+    }
+
+    @Test
+    void isNumberOddFalse() {
+
+        //given
+        int i = 998;
+
+        //when
+        boolean number = Numbers.checkIfNumberIsOdd(998);
+
+        //then
+        assertFalse(number);
     }
 }
 
